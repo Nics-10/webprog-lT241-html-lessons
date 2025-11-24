@@ -1,9 +1,9 @@
 body {
-  background-color: rgb(230, 173, 221); 
-  color: black; 
+  background-color: slateblue;
+  color: white; 
 }
 
 h1 {
-  color: black;
+  color: white; 
   text-align: center;
 }
