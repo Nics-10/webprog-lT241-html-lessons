@@ -3,24 +3,20 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-
-  background-color: #25344F; 
+  background-color: #1E3A8A;
   padding: 30px;
 }
 
 .container div {
-  background-color: #ffffff; 
+  background-color: #3B82F6;
   width: 400px;
   padding: 0;
   margin: 10px;
-
   border-radius: 12px;
   overflow: hidden;
-
   box-shadow: 0 4px 15px rgba(0,0,0,0.25);
   font-size: 18px;
   text-align: left;
-
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -42,14 +38,14 @@
 .card-body h1 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #1A1A1A;
+  color: #FFEA00;
 }
 
 .card-body p,
 .card-body ul {
   font-size: 1rem;
   line-height: 1.5;
-  color: #444;
+  color: #FFEA00;
 }
 
 .card-body ul {
@@ -64,6 +60,6 @@
   display: block;
   margin-top: 12px;
   font-size: 0.9rem;
-  color: #8EA3B8;
+  color: #FFEA00;
   font-weight: bold;
 }
