@@ -1,12 +1,11 @@
 body {
-  background-color: #25344F; 
+  background-color: #25344F;
   font-family: 'Inter', sans-serif;
-  color: #F4EBC1; 
+  color: #F4EBC1;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
-
 
 .band {
   display: grid;
@@ -15,13 +14,13 @@ body {
   padding: 2rem;
 }
 
-
 .card {
-  background-color: #1A253B; 
+  background-color: #1A253B;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .card:hover {
@@ -33,6 +32,7 @@ body {
   height: 200px;
   background-size: cover;
   background-position: center;
+  transition: background-image 0.3s ease-in-out;
 }
 
 article {
@@ -47,7 +47,7 @@ article h1 {
 
 article p {
   font-size: 1rem;
-  color: #AAB0C0; 
+  color: #AAB0C0;
   margin-bottom: 0.8rem;
 }
 
@@ -65,7 +65,7 @@ article span {
   display: block;
   margin-top: 0.8rem;
   font-size: 0.9rem;
-  color: #F5E8A8; 
+  color: #F5E8A8;
   font-weight: bold;
 }
 
@@ -76,7 +76,8 @@ article span {
   article h1 {
     font-size: 1.1rem;
   }
-  article p, article ul {
+  article p,
+  article ul {
     font-size: 0.9rem;
   }
 }
