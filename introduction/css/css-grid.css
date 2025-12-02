@@ -1,9 +1,9 @@
-
 body {
   background-color: #003153;
   color: #FAEBD7;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 .container {
   display: grid;
@@ -18,4 +18,10 @@ body {
   padding: 10px;
   font-size: 15px;
   text-align: justify;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px
 }
