@@ -3,7 +3,7 @@
 
 <head>
   <title>WEBPROG IT241</title>
-   <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -11,47 +11,76 @@
   </head>
 
 <body>
-  <h1>My Personal Profile Web page</h1>
-  <p>
-    About Me:<br>
-    Hello! I'm Neicha<br>
-    Course: 2nd year BSIT student<br>
-    IT Experience:<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Basic programming skills<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Networking<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Troubleshooting<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Computer System Servicing NC II - TESDA Certified<br>
-    Hobbies & Interests:<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Outdoor adventure<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Dancing<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Playing online games<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Playing with my cat<br>
-    My goal is to live my life to the fullest so I won't live with regrets.<br>
-    Picture Gallery<br>
-    <img src="https://i.pinimg.com/736x/66/e5/80/66e580db87cfa55295fae502e29f98a9.jpg" alt="BNI" width="500" height="500">
-  </p>
-  
-<div class="container-fluid mt-3">
-  <h1>Responsive Auto Layout Columns</h1>
-  <p>In Bootstrap 5, there is an easy way to create equal width columns: just use the <code>.col-md</code> class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width.</p>
-  <p>If the screen size is <strong>less than 768px</strong>, the columns will stack horizontally.</p>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md bg-primary text-white">1 of 2</div>
-      <div class="col-md bg-dark text-white">2 of 2</div>
-    </div>  
-  </div>
-  <br>
-  
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md bg-primary text-white">1 of 4</div>
-      <div class="col-md bg-dark text-white">2 of 4</div>
-      <div class="col-md bg-primary text-white">3 of 4</div>
-      <div class="col-md bg-dark text-white">4 of 4</div>
-    </div>  
+  <div class="header-section">
+  <div class="header-overlay">
+    <h1>My Personal Profile Web Page</h1>
+    <p>All about Neichaela Padilla (a.k.a. Neicha)</p>
   </div>
 </div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <img src="https://i.pinimg.com/736x/b3/1e/bd/b31ebdebf6c8adc2253a2544b1f4801e.jpg" class="img-fluid rounded mb-3">
+      <p>Hello! I'm Neichaela Padilla, but you can call me Nika. I'm an easygoing person who loves socializing—as long as you get my humor!</p>
+
+      <h3 class="mt-4">Course</h3>
+      <p>2nd year BSIT student at Asia Pacific College</p>
+
+      <h3 class="mt-4">IT Experience</h3>
+      <ul>
+        <li>Basic programming skills</li>
+        <li>Networking & Troubleshooting</li>
+        <li>TESDA NC II Certified in Computer System Servicing</li>
+      </ul>
+
+      <h3 class="mt-4">Hobbies & Interests</h3>
+      <ul>
+        <li>Outdoor adventure</li>
+        <li>Dancing</li>
+        <li>Playing online games</li>
+        <li>Playing with my cat</li>
+      </ul>
+    </div>
+
+    <div class="col-sm-8">
+      <h2>Picture Gallery</h2>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <img src="https://i.pinimg.com/736x/1d/45/5a/1d455a49187554788124e404aa9319a6.jpg" 
+               alt="Neicha Gallery Pic 2" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="https://i.pinimg.com/736x/66/e5/80/66e580db87cfa55295fae502e29f98a9.jpg" 
+               alt="Neicha Gallery Pic 1" class="img-fluid rounded">
+        </div>
+      </div>
+      <div class="bg-light p-3 border rounded">
+        <p><em>“Buhay ay 'di karera.”</em></p>
+      </div>
+
+      <h2 class="mt-5">Latest Ganap</h2>
+      <p>Currently exploring more about website developement and available features to apply. I'm kinda loving it tho ^^</p>
+    </div>
+  </div>
+</div>
+
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>© 2025 Neichaela Padilla | WEBPROG IT241</p>
+</div>
+
 
 </body>
 </html>

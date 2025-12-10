@@ -1,0 +1,13 @@
+ .header-section {
+    background-image: url('https://i.pinimg.com/736x/e7/65/f1/e765f197d8a553179dfe01b4b1af6621.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+  }
+  .header-overlay {
+    background-color: rgba(239, 170, 185, 0.5);
+    padding: 60px 20px;
+  }
