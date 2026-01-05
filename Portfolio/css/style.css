@@ -474,16 +474,18 @@ footer p {
 .intro-banner {
   position: relative;
   width: 100%;
-  margin-top: 50px; 
-  border-radius: 10px;
+  margin-top: var(--spacing-lg);
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 8px 24px rgba(91, 136, 178, 0.2);
 }
 
 .intro-banner-image {
   width: 100%;
-  height: 400px;       
-  object-fit: cover;    
+  height: 400px;
+  object-fit: cover;
   display: block;
+  filter: brightness(0.7);
 }
 
 .intro-banner-text {
@@ -492,31 +494,67 @@ footer p {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 80%;
+  width: 90%;
+  max-width: 800px;
+  padding: var(--spacing-md);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  color: var(--pearl);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.overlay-text {
-  background-color: rgba(0, 0, 0, 0.6); 
-  padding: 20px 30px;
-  border-radius: 10px;
-  color: white;
+.intro-banner-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--ocean);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.5px;
 }
 
-.overlay-text h1 {
-  margin: 0;
+.intro-banner-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-weight: 300;
+  color: var(--pearl);
+  text-align: justify;
+}
+
+.references-section {
+  background-color: var(--midnight);
+  color: var(--pearl);
+  padding: var(--spacing-lg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(91, 136, 178, 0.2);
+  margin-top: var(--spacing-xl);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.references-section h2 {
   font-size: 2rem;
+  color: var(--ocean);
+  margin-bottom: var(--spacing-md);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-align: center;
 }
 
-.overlay-text p {
-  margin: 5px 0 0 0;
+.references-list {
+  list-style: none;
+  padding-left: 0;
 }
 
-.content-card {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(240, 203, 203, 0.1);
-  margin-top: 20px;
+.references-list li {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.6;
+  font-weight: 300;
+  color: var(--pearl);
+}
+
+.references-list li strong {
+  color: var(--pearl);
+  font-weight: 600;
 }
 
 
