@@ -470,3 +470,136 @@ footer p {
     scroll-behavior: auto;
   }
 }
+
+.intro-banner {
+  position: relative;
+  width: 100%;
+  margin-top: var(--spacing-lg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(91, 136, 178, 0.2);
+}
+
+.intro-banner-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.7);
+}
+
+.intro-text-block {
+  padding: var(--spacing-md);
+}
+
+.intro-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  padding: var(--spacing-md);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  color: var(--pearl);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.intro-banner-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--ocean);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.5px;
+}
+
+.content-card {
+  background-color: rgba(18, 44, 79, 0.3);
+  border: 1px solid var(--midnight);
+  border-radius: 12px;
+  padding: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+  color: var(--pearl);
+  line-height: 1.8;
+  box-shadow: 0 4px 12px rgba(91, 136, 178, 0.2);
+}
+
+.intro-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ocean);
+  margin-bottom: var(--spacing-md);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-banner-text h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.references-section {
+  background-color: var(--noir);
+  padding: var(--spacing-xl) var(--spacing-md);
+  border-radius: 12px;
+  margin-top: var(--spacing-xl);
+}
+
+.references-section .section-title {
+  font-size: 2rem;
+  color: var(--ocean);
+  margin-bottom: var(--spacing-lg);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.references-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.reference-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--midnight);
+  border-radius: 12px;
+  padding: var(--spacing-md);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  transition: var(--transition);
+}
+
+.reference-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--ocean);
+  box-shadow: 0 8px 24px rgba(91, 136, 178, 0.3);
+}
+
+.reference-card h3 {
+  color: var(--ocean);
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+}
+
+.reference-card p {
+  color: var(--pearl);
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
