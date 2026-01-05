@@ -553,7 +553,7 @@ footer p {
 }
 
 .references-section {
-  background-color: var(--noir) !important;
+  background-color: var(--noir); 
   padding: var(--spacing-xl) var(--spacing-md);
   border-radius: 12px;
   margin-top: var(--spacing-xl);
@@ -575,7 +575,7 @@ footer p {
 }
 
 .reference-card {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05); 
   border: 1px solid var(--midnight);
   border-radius: 12px;
   padding: var(--spacing-md);
