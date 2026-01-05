@@ -471,24 +471,52 @@ footer p {
   }
 }
 
-.intro-image-container {
+.intro-banner {
+  position: relative;
   width: 100%;
-  overflow: hidden;
+  margin-top: 50px; 
   border-radius: 10px;
-  margin-bottom: 20px;
+  overflow: hidden;
 }
 
-.intro-image {
+.intro-banner-image {
   width: 100%;
-  height: auto;      
+  height: 400px;       
+  object-fit: cover;    
   display: block;
-  object-fit: unset;  
+}
+
+.intro-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+
+.overlay-text {
+  background-color: rgba(0, 0, 0, 0.6); 
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+.overlay-text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.overlay-text p {
+  margin: 5px 0 0 0;
 }
 
 .content-card {
-  background-color: rgba(255, 255, 255, 0.9); 
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(240, 203, 203, 0.1);
+  margin-top: 20px;
 }
+
 
