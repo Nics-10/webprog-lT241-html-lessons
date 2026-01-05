@@ -488,6 +488,10 @@ footer p {
   filter: brightness(0.7);
 }
 
+.intro-text-block {
+  padding: var(--spacing-md);
+}
+
 .intro-banner-text {
   position: absolute;
   top: 50%;
@@ -550,40 +554,54 @@ footer p {
 
 .references-section {
   background-color: var(--midnight);
-  color: var(--pearl);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-xl) var(--spacing-md);
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(91, 136, 178, 0.2);
+  box-shadow: 0 8px 24px rgba(91, 136, 178, 0.2);
   margin-top: var(--spacing-xl);
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .references-section h2 {
   font-size: 2rem;
   color: var(--ocean);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
   font-weight: 700;
-  letter-spacing: -0.5px;
   text-align: center;
+  letter-spacing: -0.5px;
 }
 
-.references-list {
-  list-style: none;
-  padding-left: 0;
+.references-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
 }
 
-.references-list li {
+.reference-card {
+  background-color: rgba(18, 44, 79, 0.3);
+  border: 1px solid var(--midnight);
+  border-radius: 12px;
+  padding: var(--spacing-md);
+  box-shadow: 0 4px 12px rgba(91, 136, 178, 0.2);
+  transition: var(--transition);
+}
+
+.reference-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--ocean);
+  box-shadow: 0 8px 24px rgba(91, 136, 178, 0.3);
+}
+
+.reference-card h3 {
+  color: var(--ocean);
+  font-size: 1.25rem;
   margin-bottom: var(--spacing-sm);
-  line-height: 1.6;
-  font-weight: 300;
-  color: var(--pearl);
-}
-
-.references-list li strong {
-  color: var(--pearl);
   font-weight: 600;
 }
 
+.reference-card p {
+  color: var(--pearl);
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
 
